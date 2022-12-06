@@ -6,9 +6,8 @@ class Movie {
 
   async create(movieCollection) {
     console.log("Entering create within index.js");
-    await movieCollection.insertOne(this);
-
     // code to save the data base
+    await movieCollection.insertOne(this);
   }
 }
 
