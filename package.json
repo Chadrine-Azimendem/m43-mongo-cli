@@ -3,5 +3,24 @@
     "dotenv": "^16.0.3",
     "mongodb": "^4.12.1",
     "yargs": "^17.6.2"
-  }
+  },
+  "name": "m43mongocli",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chadrine-Azimendem/m43-mongo-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chadrine-Azimendem/m43-mongo-cli/issues"
+  },
+  "homepage": "https://github.com/Chadrine-Azimendem/m43-mongo-cli#readme"
 }
