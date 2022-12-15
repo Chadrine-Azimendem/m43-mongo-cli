@@ -27,6 +27,17 @@ const app = async (yargsinput) => {
       }
     );
     console.log("updating", updateResult);
+  } else if (yargsinput.updateTitle) {
+    console.log("Entering Update title");
+    const updateResult = await movieCollection.updateOne(
+      {
+        "actor": yargsinput.actor,
+      },
+      {
+        $set: { title: yargsinput.title },
+      }
+    );
+    console.log("updating", updateResult);
   } else if (yargsinput.delete) {
     console.log("Entering Delete");
     // delete a movie with the input title from database
