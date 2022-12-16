@@ -53,7 +53,12 @@ const app = async (yargsinput) => {
     const deleteResult = await movieCollection.deleteOne({
       "title": yargsinput.title,
     });
-    console.dir(deleteResult.deletedCount);
+
+    if (deleteResult.deletedCount === 1) {
+      console.log(" Deleted successfully");
+    } else {
+      console.log("Delete unsuccessful");
+    }
   } else {
     console.log("Command not recognised");
   }
