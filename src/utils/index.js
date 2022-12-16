@@ -10,18 +10,6 @@ class Movie {
     console.log("Entering create within index.js");
     await movieCollection.insertOne(this);
   }
-  // async read(movieCollection) {
-  //   console.log("Entering create within index.js");
-  //   await movieCollection.insertOne(this);
-  // }
-  // async update(movieCollection) {
-  //   console.log("Entering create within index.js");
-  //   await movieCollection.insertOne(this);
-  // }
-  // async delete(movieCollection) {
-  //   console.log("Entering create within index.js");
-  //   await movieCollection.insertOne(this);
-  // }
 }
 
 module.exports = Movie;

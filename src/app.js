@@ -18,6 +18,7 @@ const app = async (yargsinput) => {
     console.table(results);
   } else if (yargsinput.updateActor) {
     console.log("Entering Update");
+    // update actor
     const updateResult = await movieCollection.updateOne(
       {
         "title": yargsinput.title,
@@ -33,6 +34,7 @@ const app = async (yargsinput) => {
     }
   } else if (yargsinput.updateTitle) {
     console.log("Entering Update title");
+    // update title
     const updateResult = await movieCollection.updateOne(
       {
         "actor": yargsinput.actor,
@@ -63,7 +65,7 @@ const app = async (yargsinput) => {
     console.log("Command not recognised");
   }
 
-  // close data base
+  // close data base connection
   await client.close();
 };
 
